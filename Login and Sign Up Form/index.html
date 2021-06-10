@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login & Sign Up Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <p class="form__message form__message--error"></p>
+
+            <div class="form__input-group">
+                <input type="text" class="form__input" placeholder="Username or email" autofocus="autofocus">
+                <p class="form__input-error-message"></p>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" class="form__input" placeholder="Password">
+            </div>
+
+            <button class="form__button" type="submit">Continue</button>
+
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+
+            <p class="form__text">
+                <a href="./" id="linkCreateAccount" class="form__link">Don't have an account? Create Account</a>
+            </p>
+        </form>
+
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Sign Up</h1>
+            <p class="form__message form__message--error"></p>
+
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" placeholder="Username" autofocus="autofocus">
+                <p class="form__input-error-message"></p>
+            </div>
+
+            <div class="form__input-group">
+                <input type="email" id="signupEmail" class="form__input" placeholder="Email">
+                <p class="form__input-error-message"></p>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" id="signUpPassword" class="form__input" placeholder="Password" >
+                <p class="form__input-password-strength" id="passwordStrength"></p>
+            </div>
+
+            <div class="form__input-group">
+                <input type="password" id="confirmPassword" class="form__input" placeholder="Confirm password">
+                <p class="form__input-password-match" id="passwordMatch"></p>
+            </div>
+
+            <button class="form__button" type="submit">Continue</button>
+
+            <p class="form__text">
+                <a href="./" id="linkLogin" class="form__link">Already have an account? Sign In</a>
+            </p>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
